@@ -1,0 +1,20 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Model;
+
+/**
+ *
+ * @author David
+ */
+public class Candidato extends Pessoa{
+    
+    
+    private Integer NIS;
+    private String DispHorario;
+    private String Profissao;
+    
+    
+}
