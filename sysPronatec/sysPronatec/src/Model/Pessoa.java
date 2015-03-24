@@ -11,4 +11,8 @@ package Model;
  */
 public class Pessoa {
     
+    
+    
+    private Long ID;
+   
 }
