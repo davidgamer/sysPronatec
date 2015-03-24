@@ -5,8 +5,11 @@
  */
 package hibernate;
 
+import java.util.Calendar;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 
 
@@ -23,9 +26,28 @@ public class Hibernate {
         
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
-        session.close();
- 
+       
+     
+        
+        Tarefa tf = new Tarefa();
+        tf.setDescricao("Estou bom");
+        tf.setFinalizado(true);
+        tf.setDataFinalizacao(Calendar.getInstance());
+  
+        
+         Transaction tx = session.beginTransaction();
+        
+        
+        tx.commit();
+        session.saveOrUpdate(tf);
       
+        session.flush();
+        
+        
+         session.close();
+      
+        System.out.println("Help Man");
+        
     
 }
 }
