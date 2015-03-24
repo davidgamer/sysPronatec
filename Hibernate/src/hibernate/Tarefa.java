@@ -25,11 +25,11 @@ public class Tarefa implements  Serializable{
     private Long ID;
     @Column
     private String descricao;
-     @Column
+    @Column
     private boolean finalizado;
 
-  @Temporal(TemporalType.DATE)
-  private Calendar dataFinalizacao;
+     @Temporal(TemporalType.DATE)
+     private Calendar dataFinalizacao;
 
     public Tarefa() {
     }
