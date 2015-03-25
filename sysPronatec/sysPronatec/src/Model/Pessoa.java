@@ -36,19 +36,25 @@ public class Pessoa {
     private String NomeMae;
     @Column(name = "Cor",nullable = false,length = 10)
     private String Cor;
-
+    @OneToOne(fetch = FetchType.LAZY,
+    mappedBy = "pessoa",
+    cascade = CascadeType.ALL)
+    private Candidato candidato;
 
     public Pessoa() {
     }
 
-    public Pessoa(Long IdPessoa, String Nome, int CPF, Calendar DataNasc, String NomeMae, String Cor) {
+    public Pessoa(Long IdPessoa, String Nome, int CPF, Calendar DataNasc, String NomeMae, String Cor,Candidato candidato) {
         this.IdPessoa = IdPessoa;
         this.Nome = Nome;
         this.CPF = CPF;
         this.DataNasc = DataNasc;
         this.NomeMae = NomeMae;
         this.Cor = Cor;
+        this.candidato = candidato;
     }
+
+   
 
     
 

@@ -5,9 +5,12 @@
  */
 package Model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 /**
  *
@@ -15,14 +18,21 @@ import javax.persistence.Entity;
  */
 @Entity
 public class Candidato {
-    
- @Column(name = "NIS",nullable = false)   
-private int NIS;
- @Column(name = "Profissao",nullable = false,length = 20)
-private String Profissao;
- @Column(name = "DispHorario",nullable = false,length = 10)
-private String DispHorario;
 
+    @Id
+    @Column(name = "IdPessoa", nullable = false, updatable = false, insertable = false)
+    private Integer idPessoa;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "IdPessoa", nullable = false)
+    private Pessoa pessoa;
+
+    @Column(name = "NIS", nullable = false)
+    private int NIS;
+    @Column(name = "Profissao", nullable = false, length = 20)
+    private String Profissao;
+    @Column(name = "DispHorario", nullable = false, length = 10)
+    private String DispHorario;
 
     public Candidato() {
     }
@@ -32,10 +42,6 @@ private String DispHorario;
         this.Profissao = Profissao;
         this.DispHorario = DispHorario;
     }
-
- 
- 
- 
 
     public int getNIS() {
         return NIS;
@@ -61,6 +67,4 @@ private String DispHorario;
         this.DispHorario = DispHorario;
     }
 
- 
- 
 }

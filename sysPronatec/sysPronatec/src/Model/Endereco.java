@@ -34,7 +34,6 @@ public class Endereco {
    @Column(name = "Logradouro",nullable = false,length = 20)
     private String Logradouro;
 
-
     public Endereco() {
     }
 
