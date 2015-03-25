@@ -24,5 +24,40 @@ public class Telefone {
    @Column(name = "TelefoneResidencial",nullable = false)
     private Integer TelefoneResidencial;
 
+    public Telefone() {
+    }
+
+    public Telefone(int IdTelefone, Integer TelefoneCelular, Integer TelefoneResidencial) {
+        this.IdTelefone = IdTelefone;
+        this.TelefoneCelular = TelefoneCelular;
+        this.TelefoneResidencial = TelefoneResidencial;
+    }
+
+   
+   
+    public int getIdTelefone() {
+        return IdTelefone;
+    }
+
+    public void setIdTelefone(int IdTelefone) {
+        this.IdTelefone = IdTelefone;
+    }
+
+    public Integer getTelefoneCelular() {
+        return TelefoneCelular;
+    }
+
+    public void setTelefoneCelular(Integer TelefoneCelular) {
+        this.TelefoneCelular = TelefoneCelular;
+    }
+
+    public Integer getTelefoneResidencial() {
+        return TelefoneResidencial;
+    }
+
+    public void setTelefoneResidencial(Integer TelefoneResidencial) {
+        this.TelefoneResidencial = TelefoneResidencial;
+    }
+
     
 }

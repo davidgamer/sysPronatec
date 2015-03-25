@@ -25,4 +25,39 @@ public class Curso {
     private String NomeCurso;
     @Column(name = "LocalCurso",nullable = false,length = 20)
     private String Local;
+
+    public Curso() {
+    }
+
+    public Curso(Long IdCurso, String NomeCurso, String Local) {
+        this.IdCurso = IdCurso;
+        this.NomeCurso = NomeCurso;
+        this.Local = Local;
+    }
+
+    
+    public Long getIdCurso() {
+        return IdCurso;
+    }
+
+    public void setIdCurso(Long IdCurso) {
+        this.IdCurso = IdCurso;
+    }
+
+    public String getNomeCurso() {
+        return NomeCurso;
+    }
+
+    public void setNomeCurso(String NomeCurso) {
+        this.NomeCurso = NomeCurso;
+    }
+
+    public String getLocal() {
+        return Local;
+    }
+
+    public void setLocal(String Local) {
+        this.Local = Local;
+    }
+    
 }

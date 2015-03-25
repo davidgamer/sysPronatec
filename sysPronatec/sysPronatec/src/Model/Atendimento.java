@@ -29,5 +29,67 @@ public class Atendimento {
     private String RepreCadastro;
     @Column(name = "FormaAcesso",nullable = false,length = 10)
     private String FormaAcesso;
+
+    public Atendimento() {
+    }
+
+    public Atendimento(long IdAtendimento, String Cadastrador, Calendar DataCadastro, String UnidadeAtendimento, String RepreCadastro, String FormaAcesso) {
+        this.IdAtendimento = IdAtendimento;
+        this.Cadastrador = Cadastrador;
+        this.DataCadastro = DataCadastro;
+        this.UnidadeAtendimento = UnidadeAtendimento;
+        this.RepreCadastro = RepreCadastro;
+        this.FormaAcesso = FormaAcesso;
+    }
+
+    
+    public long getIdAtendimento() {
+        return IdAtendimento;
+    }
+
+    public void setIdAtendimento(long IdAtendimento) {
+        this.IdAtendimento = IdAtendimento;
+    }
+
+    public String getCadastrador() {
+        return Cadastrador;
+    }
+
+    public void setCadastrador(String Cadastrador) {
+        this.Cadastrador = Cadastrador;
+    }
+
+    public Calendar getDataCadastro() {
+        return DataCadastro;
+    }
+
+    public void setDataCadastro(Calendar DataCadastro) {
+        this.DataCadastro = DataCadastro;
+    }
+
+    public String getUnidadeAtendimento() {
+        return UnidadeAtendimento;
+    }
+
+    public void setUnidadeAtendimento(String UnidadeAtendimento) {
+        this.UnidadeAtendimento = UnidadeAtendimento;
+    }
+
+    public String getRepreCadastro() {
+        return RepreCadastro;
+    }
+
+    public void setRepreCadastro(String RepreCadastro) {
+        this.RepreCadastro = RepreCadastro;
+    }
+
+    public String getFormaAcesso() {
+        return FormaAcesso;
+    }
+
+    public void setFormaAcesso(String FormaAcesso) {
+        this.FormaAcesso = FormaAcesso;
+    }
+    
     
 }
