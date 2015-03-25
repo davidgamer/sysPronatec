@@ -11,4 +11,9 @@ package Model;
  */
 public class Curso {
     
+    
+    
+    private  Long IdCurso;
+    private String NomeCurso;
+    private String Local;
 }

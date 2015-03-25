@@ -11,4 +11,12 @@ package Model;
  */
 public class Endereco {
     
+    private Long IdEndereco;
+    private String Rua;
+    private String Bairro;
+    private String Nomebairro;
+    private int NumeroCasa;
+    private String Complemento;
+    private String Logradouro;
+    
 }

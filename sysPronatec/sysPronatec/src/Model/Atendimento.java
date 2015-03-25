@@ -5,10 +5,19 @@
  */
 package Model;
 
+import java.util.Calendar;
+
 /**
  *
  * @author David
  */
 public class Atendimento {
+    
+    private long IdAtendimento;
+    private String Cadastrador;
+    private Calendar DataCadastro;
+    private String UnidadeAtendimento;
+    private String RepreCadastro;
+    private String FormaAcesso;
     
 }
