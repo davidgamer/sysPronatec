@@ -11,6 +11,7 @@ package Model;
  */
 public class Escolaridade {
     private String GrauEscolaridade;
-    private int dd;
+    
+   
     
 }
