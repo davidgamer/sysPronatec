@@ -14,22 +14,22 @@ import javax.persistence.*;
  */
 @Entity
 public class Atendimento {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdAtendimento",nullable = false)
+    @Column(name = "IdAtendimento", nullable = false)
     private long IdAtendimento;
-    @Column(name = "Cadastrador",nullable = false,length = 20)
+    @Column(name = "Cadastrador", nullable = false, length = 20)
     private String Cadastrador;
-    @Column(name = "DataCadastro",nullable = false)
+    @Column(name = "DataCadastro", nullable = false)
     @Temporal(TemporalType.DATE)
     private Calendar DataCadastro;
-    @Column(name = "UnidadeAtendimento",nullable = false,length = 20)
+    @Column(name = "UnidadeAtendimento", nullable = false, length = 20)
     private String UnidadeAtendimento;
-    @Column(name = "RepreCadastro",nullable = false,length = 40)
+    @Column(name = "RepreCadastro", nullable = false, length = 40)
     private String RepreCadastro;
-    @Column(name = "FormaAcesso",nullable = false,length = 10)
+    @Column(name = "FormaAcesso", nullable = false, length = 10)
     private String FormaAcesso;
-
 
     public Atendimento() {
     }
@@ -43,7 +43,6 @@ public class Atendimento {
         this.FormaAcesso = FormaAcesso;
     }
 
- 
     public long getIdAtendimento() {
         return IdAtendimento;
     }
@@ -91,6 +90,5 @@ public class Atendimento {
     public void setFormaAcesso(String FormaAcesso) {
         this.FormaAcesso = FormaAcesso;
     }
-    
-    
+
 }

@@ -8,43 +8,38 @@ package Model;
 import java.util.Calendar;
 import javax.persistence.*;
 
-
 /**
  *
  * @author David
  */
-
-
 @Entity
 
-
 public class Pessoa {
-    
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdPessoa",nullable = false)
+    @Column(name = "IdPessoa", nullable = false)
     private Long IdPessoa;
-    @Column(name = "Nome",nullable = false,length = 40)
+    @Column(name = "Nome", nullable = false, length = 40)
     private String Nome;
-    @Column(name = "CPF",nullable = false)
+    @Column(name = "CPF", nullable = false)
     private int CPF;
-    @Column(name = "DataNascimento",nullable = false)
+    @Column(name = "DataNascimento", nullable = false)
     @Temporal(TemporalType.DATE)
     private Calendar DataNasc;
-    @Column(name = "NomeMae",nullable = false,length = 40)
+    @Column(name = "NomeMae", nullable = false, length = 40)
     private String NomeMae;
-    @Column(name = "Cor",nullable = false,length = 10)
+    @Column(name = "Cor", nullable = false, length = 10)
     private String Cor;
     @OneToOne(fetch = FetchType.LAZY,
-    mappedBy = "pessoa",
-    cascade = CascadeType.ALL)
+            mappedBy = "pessoa",
+            cascade = CascadeType.ALL)
     private Candidato candidato;
 
     public Pessoa() {
     }
 
-    public Pessoa(Long IdPessoa, String Nome, int CPF, Calendar DataNasc, String NomeMae, String Cor,Candidato candidato) {
+    public Pessoa(Long IdPessoa, String Nome, int CPF, Calendar DataNasc, String NomeMae, String Cor, Candidato candidato) {
         this.IdPessoa = IdPessoa;
         this.Nome = Nome;
         this.CPF = CPF;
@@ -53,10 +48,6 @@ public class Pessoa {
         this.Cor = Cor;
         this.candidato = candidato;
     }
-
-   
-
-    
 
     public Long getIdPessoa() {
         return IdPessoa;
@@ -105,7 +96,5 @@ public class Pessoa {
     public void setCor(String Cor) {
         this.Cor = Cor;
     }
-    
-    
-   
+
 }

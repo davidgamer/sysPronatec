@@ -13,7 +13,8 @@ import javax.persistence.*;
  */
 @Entity
 public class Escolaridade {
-    @Column(name = "GrauEscolaridade",nullable = false,length = 20)
+
+    @Column(name = "GrauEscolaridade", nullable = false, length = 20)
     private String GrauEscolaridade;
 
     public Escolaridade() {
@@ -22,7 +23,6 @@ public class Escolaridade {
     public Escolaridade(String GrauEscolaridade) {
         this.GrauEscolaridade = GrauEscolaridade;
     }
-    
 
     public String getGrauEscolaridade() {
         return GrauEscolaridade;
@@ -31,7 +31,5 @@ public class Escolaridade {
     public void setGrauEscolaridade(String GrauEscolaridade) {
         this.GrauEscolaridade = GrauEscolaridade;
     }
-    
-   
-    
+
 }

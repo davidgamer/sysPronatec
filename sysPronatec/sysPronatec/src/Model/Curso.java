@@ -11,19 +11,17 @@ import javax.persistence.*;
  *
  * @author David
  */
-
 @Entity
 
 public class Curso {
-    
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdCurso",nullable = false)
-    private  Long IdCurso;
-    @Column(name = "NomeCurso",nullable = false,length = 20)
+    @Column(name = "IdCurso", nullable = false)
+    private Long IdCurso;
+    @Column(name = "NomeCurso", nullable = false, length = 20)
     private String NomeCurso;
-    @Column(name = "LocalCurso",nullable = false,length = 20)
+    @Column(name = "LocalCurso", nullable = false, length = 20)
     private String Local;
 
     public Curso() {
@@ -35,7 +33,6 @@ public class Curso {
         this.Local = Local;
     }
 
-    
     public Long getIdCurso() {
         return IdCurso;
     }
@@ -59,5 +56,5 @@ public class Curso {
     public void setLocal(String Local) {
         this.Local = Local;
     }
-    
+
 }

@@ -7,10 +7,6 @@ package Model;
 
 import javax.persistence.*;
 
-
-
-
-
 /**
  *
  * @author David
@@ -18,20 +14,20 @@ import javax.persistence.*;
 @Entity
 
 public class Endereco {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "IdEndereco")
     private Long IdEndereco;
-    @Column(name = "Rua",nullable = false,length = 30)
+    @Column(name = "Rua", nullable = false, length = 30)
     private String Rua;
-    @Column(name = "Bairro",nullable = false,length = 20)
+    @Column(name = "Bairro", nullable = false, length = 20)
     private String Bairro;
-   @Column(name = "NumeroCasa",nullable = false)
+    @Column(name = "NumeroCasa", nullable = false)
     private int NumeroCasa;
-   @Column(name = "Complemento",nullable = false,length = 20)
+    @Column(name = "Complemento", nullable = false, length = 20)
     private String Complemento;
-   @Column(name = "Logradouro",nullable = false,length = 20)
+    @Column(name = "Logradouro", nullable = false, length = 20)
     private String Logradouro;
 
     public Endereco() {
@@ -45,7 +41,6 @@ public class Endereco {
         this.Complemento = Complemento;
         this.Logradouro = Logradouro;
     }
-
 
     public Long getIdEndereco() {
         return IdEndereco;
@@ -94,6 +89,5 @@ public class Endereco {
     public void setLogradouro(String Logradouro) {
         this.Logradouro = Logradouro;
     }
-    
-   
+
 }

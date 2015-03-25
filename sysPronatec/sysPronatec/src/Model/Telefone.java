@@ -13,15 +13,14 @@ import javax.persistence.*;
  */
 @Entity
 public class Telefone {
-    
-   
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   @Column(name = "IdTelefone",nullable = false)
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IdTelefone", nullable = false)
     private int IdTelefone;
-   @Column(name = "TelefoneCelular",nullable = false)
+    @Column(name = "TelefoneCelular", nullable = false)
     private Integer TelefoneCelular;
-   @Column(name = "TelefoneResidencial",nullable = false)
+    @Column(name = "TelefoneResidencial", nullable = false)
     private Integer TelefoneResidencial;
 
     public Telefone() {
@@ -33,8 +32,6 @@ public class Telefone {
         this.TelefoneResidencial = TelefoneResidencial;
     }
 
-   
-   
     public int getIdTelefone() {
         return IdTelefone;
     }
@@ -59,5 +56,4 @@ public class Telefone {
         this.TelefoneResidencial = TelefoneResidencial;
     }
 
-    
 }
