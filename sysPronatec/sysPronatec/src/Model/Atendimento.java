@@ -21,6 +21,7 @@ public class Atendimento {
     @Column(name = "Cadastrador",nullable = false,length = 20)
     private String Cadastrador;
     @Column(name = "DataCadastro",nullable = false)
+    @Temporal(TemporalType.DATE)
     private Calendar DataCadastro;
     @Column(name = "UnidadeAtendimento",nullable = false,length = 20)
     private String UnidadeAtendimento;
