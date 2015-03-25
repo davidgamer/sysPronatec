@@ -23,6 +23,7 @@ private String Profissao;
  @Column(name = "DispHorario",nullable = false,length = 10)
 private String DispHorario;
 
+
     public Candidato() {
     }
 
@@ -35,6 +36,7 @@ private String DispHorario;
  
  
  
+
     public int getNIS() {
         return NIS;
     }

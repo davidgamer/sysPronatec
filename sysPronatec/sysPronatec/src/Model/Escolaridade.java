@@ -16,6 +16,7 @@ public class Escolaridade {
     @Column(name = "GrauEscolaridade",nullable = false,length = 20)
     private String GrauEscolaridade;
 
+
     public Escolaridade() {
     }
 
@@ -23,6 +24,7 @@ public class Escolaridade {
         this.GrauEscolaridade = GrauEscolaridade;
     }
     
+
 
     public String getGrauEscolaridade() {
         return GrauEscolaridade;

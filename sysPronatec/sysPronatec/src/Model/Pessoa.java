@@ -5,10 +5,8 @@
  */
 package Model;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
 import java.util.Calendar;
 import javax.persistence.*;
-import static org.eclipse.persistence.platform.database.oracle.plsql.OraclePLSQLTypes.Int;
 
 
 /**
@@ -39,6 +37,7 @@ public class Pessoa {
     @Column(name = "Cor",nullable = false,length = 10)
     private String Cor;
 
+
     public Pessoa() {
     }
 
@@ -52,6 +51,7 @@ public class Pessoa {
     }
 
     
+
     public Long getIdPessoa() {
         return IdPessoa;
     }

@@ -34,6 +34,7 @@ public class Endereco {
    @Column(name = "Logradouro",nullable = false,length = 20)
     private String Logradouro;
 
+
     public Endereco() {
     }
 
@@ -46,7 +47,7 @@ public class Endereco {
         this.Logradouro = Logradouro;
     }
 
-   
+
     public Long getIdEndereco() {
         return IdEndereco;
     }

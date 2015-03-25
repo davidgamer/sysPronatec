@@ -30,6 +30,7 @@ public class Atendimento {
     @Column(name = "FormaAcesso",nullable = false,length = 10)
     private String FormaAcesso;
 
+
     public Atendimento() {
     }
 
@@ -42,7 +43,7 @@ public class Atendimento {
         this.FormaAcesso = FormaAcesso;
     }
 
-    
+ 
     public long getIdAtendimento() {
         return IdAtendimento;
     }

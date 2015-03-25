@@ -17,6 +17,7 @@ public class OpcaoCurso {
     @Column(name = "Opcao",nullable = false,length = 20)
     private String Opcao;
 
+
     
      public OpcaoCurso() {
     }
@@ -25,6 +26,7 @@ public class OpcaoCurso {
     }
 
    
+
 
     public String getOpcao() {
         return Opcao;
