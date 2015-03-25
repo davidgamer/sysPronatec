@@ -5,66 +5,53 @@
  */
 package Model;
 
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 /**
  *
  * @author David
  */
 @Entity
+@Table(name = "Candidato")
 public class Candidato {
 
     @Id
-    @Column(name = "IdPessoa", nullable = false, updatable = false, insertable = false)
-    private Integer idPessoa;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdPessoa", nullable = false)
-    private Pessoa pessoa;
+    @Column(name = "IdPessoaCandidato", nullable = false, updatable = false, insertable = false)
+    private Integer idPessoaCandidato;
 
     @Column(name = "NIS", nullable = false)
     private int NIS;
+
     @Column(name = "Profissao", nullable = false, length = 20)
     private String Profissao;
+
     @Column(name = "DispHorario", nullable = false, length = 10)
     private String DispHorario;
 
-    public Candidato() {
-    }
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "IdPessoa", nullable = false)
+    private Pessoa Pessoa;
 
-    public Candidato(int NIS, String Profissao, String DispHorario) {
-        this.NIS = NIS;
-        this.Profissao = Profissao;
-        this.DispHorario = DispHorario;
-    }
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "IdEscolaridade", nullable = false)
+    private Escolaridade escolaridade;
 
-    public int getNIS() {
-        return NIS;
-    }
+    @OneToMany(fetch = FetchType.LAZY,
+            mappedBy = "Candidato")
+    private List<Telefone> telefones;
 
-    public void setNIS(int NIS) {
-        this.NIS = NIS;
-    }
-
-    public String getProfissao() {
-        return Profissao;
-    }
-
-    public void setProfissao(String Profissao) {
-        this.Profissao = Profissao;
-    }
-
-    public String getDispHorario() {
-        return DispHorario;
-    }
-
-    public void setDispHorario(String DispHorario) {
-        this.DispHorario = DispHorario;
-    }
+    @OneToMany(fetch = FetchType.LAZY,
+            mappedBy = "Candidato")
+    private List<Atendimento> Atendimentos;
 
 }

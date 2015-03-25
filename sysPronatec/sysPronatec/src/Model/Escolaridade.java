@@ -5,6 +5,7 @@
  */
 package Model;
 
+import java.util.List;
 import javax.persistence.*;
 
 /**
@@ -12,24 +13,18 @@ import javax.persistence.*;
  * @author David
  */
 @Entity
+@Table(name = "Escolaridade")
 public class Escolaridade {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IdEscolaridade", nullable = false, updatable = false, insertable = false)
+    private Long IdEscolaridade;
 
     @Column(name = "GrauEscolaridade", nullable = false, length = 20)
     private String GrauEscolaridade;
 
-    public Escolaridade() {
-    }
-
-    public Escolaridade(String GrauEscolaridade) {
-        this.GrauEscolaridade = GrauEscolaridade;
-    }
-
-    public String getGrauEscolaridade() {
-        return GrauEscolaridade;
-    }
-
-    public void setGrauEscolaridade(String GrauEscolaridade) {
-        this.GrauEscolaridade = GrauEscolaridade;
-    }
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "Escolaridade")
+    private List<Candidato> candidatos;
 
 }

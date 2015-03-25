@@ -12,48 +12,22 @@ import javax.persistence.*;
  * @author David
  */
 @Entity
+@Table(name = "Telefone")
 public class Telefone {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "IdTelefone", nullable = false)
     private int IdTelefone;
+
     @Column(name = "TelefoneCelular", nullable = false)
     private Integer TelefoneCelular;
+
     @Column(name = "TelefoneResidencial", nullable = false)
     private Integer TelefoneResidencial;
-
-    public Telefone() {
-    }
-
-    public Telefone(int IdTelefone, Integer TelefoneCelular, Integer TelefoneResidencial) {
-        this.IdTelefone = IdTelefone;
-        this.TelefoneCelular = TelefoneCelular;
-        this.TelefoneResidencial = TelefoneResidencial;
-    }
-
-    public int getIdTelefone() {
-        return IdTelefone;
-    }
-
-    public void setIdTelefone(int IdTelefone) {
-        this.IdTelefone = IdTelefone;
-    }
-
-    public Integer getTelefoneCelular() {
-        return TelefoneCelular;
-    }
-
-    public void setTelefoneCelular(Integer TelefoneCelular) {
-        this.TelefoneCelular = TelefoneCelular;
-    }
-
-    public Integer getTelefoneResidencial() {
-        return TelefoneResidencial;
-    }
-
-    public void setTelefoneResidencial(Integer TelefoneResidencial) {
-        this.TelefoneResidencial = TelefoneResidencial;
-    }
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "IdPessoaCandidato",nullable = false)
+    private Candidato Candidato;
 
 }
