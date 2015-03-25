@@ -5,11 +5,14 @@
  */
 package Model;
 
+import javax.persistence.*;
+
 /**
  *
  * @author David
  */
 public class OpcaoCurso {
+    @Column(name = "Opcao",nullable = false,length = 20)
     private String Opcao;
     
     

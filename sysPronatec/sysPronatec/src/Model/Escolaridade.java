@@ -5,12 +5,17 @@
  */
 package Model;
 
+import javax.persistence.*;
+
 /**
  *
  * @author David
  */
+@Entity
 public class Escolaridade {
+    @Column(name = "GrauEscolaridade",nullable = false,length = 20)
     private String GrauEscolaridade;
-    private int dd;
+    
+   
     
 }

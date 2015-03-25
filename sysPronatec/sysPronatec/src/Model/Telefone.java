@@ -5,14 +5,23 @@
  */
 package Model;
 
+import javax.persistence.*;
+
 /**
  *
  * @author David
  */
+@Entity
 public class Telefone {
     
+   
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   @Column(name = "IdTelefone",nullable = false)
     private int IdTelefone;
+   @Column(name = "TelefoneCelular",nullable = false)
     private Integer TelefoneCelular;
+   @Column(name = "TelefoneResidencial",nullable = false)
     private Integer TelefoneResidencial;
 
     

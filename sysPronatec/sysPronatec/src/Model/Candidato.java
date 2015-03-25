@@ -5,16 +5,22 @@
  */
 package Model;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
 
 /**
  *
  * @author David
  */
+@Entity
 public class Candidato {
     
+ @Column(name = "NIS",nullable = false)   
 private int NIS;
+ @Column(name = "Profissao",nullable = false,length = 20)
 private String Profissao;
+ @Column(name = "DispHorario",nullable = false,length = 10)
 private String DispHorario;
 
 }
