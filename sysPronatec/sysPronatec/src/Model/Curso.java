@@ -26,7 +26,6 @@ public class Curso {
     @Column(name = "LocalCurso",nullable = false,length = 20)
     private String Local;
 
-
     public Curso() {
     }
 
@@ -37,7 +36,6 @@ public class Curso {
     }
 
     
-
     public Long getIdCurso() {
         return IdCurso;
     }

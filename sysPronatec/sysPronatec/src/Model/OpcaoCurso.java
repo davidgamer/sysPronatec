@@ -18,7 +18,6 @@ public class OpcaoCurso {
     private String Opcao;
 
 
-    
      public OpcaoCurso() {
     }
     public OpcaoCurso(String Opcao) {
