@@ -15,6 +15,14 @@ import javax.persistence.*;
 public class Escolaridade {
     @Column(name = "GrauEscolaridade",nullable = false,length = 20)
     private String GrauEscolaridade;
+
+    public String getGrauEscolaridade() {
+        return GrauEscolaridade;
+    }
+
+    public void setGrauEscolaridade(String GrauEscolaridade) {
+        this.GrauEscolaridade = GrauEscolaridade;
+    }
     
    
     

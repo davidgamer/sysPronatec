@@ -23,4 +23,30 @@ private String Profissao;
  @Column(name = "DispHorario",nullable = false,length = 10)
 private String DispHorario;
 
+    public int getNIS() {
+        return NIS;
+    }
+
+    public void setNIS(int NIS) {
+        this.NIS = NIS;
+    }
+
+    public String getProfissao() {
+        return Profissao;
+    }
+
+    public void setProfissao(String Profissao) {
+        this.Profissao = Profissao;
+    }
+
+    public String getDispHorario() {
+        return DispHorario;
+    }
+
+    public void setDispHorario(String DispHorario) {
+        this.DispHorario = DispHorario;
+    }
+
+ 
+ 
 }

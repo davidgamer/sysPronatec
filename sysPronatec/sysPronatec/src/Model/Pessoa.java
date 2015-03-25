@@ -38,6 +38,54 @@ public class Pessoa {
     private String NomeMae;
     @Column(name = "Cor",nullable = false,length = 10)
     private String Cor;
+
+    public Long getIdPessoa() {
+        return IdPessoa;
+    }
+
+    public void setIdPessoa(Long IdPessoa) {
+        this.IdPessoa = IdPessoa;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public int getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(int CPF) {
+        this.CPF = CPF;
+    }
+
+    public Calendar getDataNasc() {
+        return DataNasc;
+    }
+
+    public void setDataNasc(Calendar DataNasc) {
+        this.DataNasc = DataNasc;
+    }
+
+    public String getNomeMae() {
+        return NomeMae;
+    }
+
+    public void setNomeMae(String NomeMae) {
+        this.NomeMae = NomeMae;
+    }
+
+    public String getCor() {
+        return Cor;
+    }
+
+    public void setCor(String Cor) {
+        this.Cor = Cor;
+    }
     
     
    
