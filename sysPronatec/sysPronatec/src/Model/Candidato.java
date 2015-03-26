@@ -8,6 +8,7 @@ package Model;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -24,10 +25,12 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Candidato")
-public class Candidato {
+
+public class Candidato  {
 
     @Id
-    @Column(name = "IdPessoaCandidato", nullable = false, updatable = false, insertable = false)
+    @Column(name = "IdPessoaCandidato", nullable = false, updatable = true, insertable = false)
+ 
     private Integer IdPessoaCandidato;
 
     @Column(name = "NIS", nullable = false)
@@ -39,9 +42,9 @@ public class Candidato {
     @Column(name = "DispHorario", nullable = false, length = 10)
     private String DispHorario;
 
-   @OneToOne(fetch = FetchType.LAZY)
-   @JoinColumn(name = "IdPessoa", nullable = false)
-    
+   @OneToOne
+   @JoinColumn(name = "IdPessoa") 
+   
     private Pessoa Pessoa;
 
     @ManyToOne(fetch = FetchType.LAZY)

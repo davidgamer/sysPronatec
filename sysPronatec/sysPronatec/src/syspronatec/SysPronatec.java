@@ -5,8 +5,14 @@
  */
 package syspronatec;
 
+import Model.Curso;
+import Model.Endereco;
+import Model.Pessoa;
+import java.util.Calendar;
+import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 /**
  *
@@ -21,6 +27,49 @@ public class SysPronatec {
         
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
+          Transaction tx = null;
+        
+        
+        session.beginTransaction();
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     
+          try {
+
+          
+
+            tx = session.beginTransaction();
+
+          //  session.persist(p);
+            //session.persist(Ed);
+
+            tx.commit();
+
+        } catch (Exception e) {
+
+            if (tx != null)
+
+              tx.rollback();
+
+            System.out.println("Transação falhou : ");
+
+            e.printStackTrace();
+
+        }
+
+
+
+        
         
         
         session.close();

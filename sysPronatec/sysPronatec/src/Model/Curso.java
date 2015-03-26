@@ -31,6 +31,39 @@ public class Curso {
     @JoinColumn(name = "IdAtendimento", nullable = false)
     private Atendimento Atendimento;
 
+    public Long getIdCurso() {
+        return IdCurso;
+    }
+
+    public void setIdCurso(Long IdCurso) {
+        this.IdCurso = IdCurso;
+    }
+
+    public String getNomeCurso() {
+        return NomeCurso;
+    }
+
+    public void setNomeCurso(String NomeCurso) {
+        this.NomeCurso = NomeCurso;
+    }
+
+    public String getLocal() {
+        return Local;
+    }
+
+    public void setLocal(String Local) {
+        this.Local = Local;
+    }
+
+    public Atendimento getAtendimento() {
+        return Atendimento;
+    }
+
+    public void setAtendimento(Atendimento Atendimento) {
+        this.Atendimento = Atendimento;
+    }
+
+   
    
 
 }

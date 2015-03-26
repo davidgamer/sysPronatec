@@ -8,12 +8,12 @@
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
-    <mapping class="Model.Atendimento" />
-    <mapping class="Model.Candidato" />
-    <mapping class="Model.Curso" />
-    <mapping class="Model.Endereco" />
-    <mapping class="Model.Escolaridade" />
-    <mapping class="Model.Pessoa" />
-    <mapping class="Model.Telefone" />
+    <mapping class="Model.Atendimento"/>
+    <mapping class="Model.Candidato"/>
+    <mapping class="Model.Curso"/>
+    <mapping class="Model.Endereco"/>
+    <mapping class="Model.Escolaridade"/>
+    <mapping class="Model.Pessoa"/>
+    <mapping class="Model.Telefone"/>
   </session-factory>
 </hibernate-configuration>

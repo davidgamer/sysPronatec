@@ -40,4 +40,62 @@ public class Endereco {
             mappedBy = "Endereco")
     private List<Pessoa> Pessoa;
 
+    public Long getIdEndereco() {
+        return IdEndereco;
+    }
+
+    public void setIdEndereco(Long IdEndereco) {
+        this.IdEndereco = IdEndereco;
+    }
+
+    public String getRua() {
+        return Rua;
+    }
+
+    public void setRua(String Rua) {
+        this.Rua = Rua;
+    }
+
+    public String getBairro() {
+        return Bairro;
+    }
+
+    public void setBairro(String Bairro) {
+        this.Bairro = Bairro;
+    }
+
+    public int getNumeroCasa() {
+        return NumeroCasa;
+    }
+
+    public void setNumeroCasa(int NumeroCasa) {
+        this.NumeroCasa = NumeroCasa;
+    }
+
+    public String getComplemento() {
+        return Complemento;
+    }
+
+    public void setComplemento(String Complemento) {
+        this.Complemento = Complemento;
+    }
+
+    public String getLogradouro() {
+        return Logradouro;
+    }
+
+    public void setLogradouro(String Logradouro) {
+        this.Logradouro = Logradouro;
+    }
+
+    public List<Pessoa> getPessoa() {
+        return Pessoa;
+    }
+
+    public void setPessoa(List<Pessoa> Pessoa) {
+        this.Pessoa = Pessoa;
+    }
+    
+    
+
 }

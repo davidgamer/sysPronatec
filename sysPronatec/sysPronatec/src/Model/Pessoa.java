@@ -14,6 +14,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "Pessoa")
+
 public class Pessoa {
 
     @Id
@@ -45,6 +46,70 @@ public class Pessoa {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdEndereco", nullable = false)
     private Endereco Endereco;
+
+    public Long getIdPessoa() {
+        return IdPessoa;
+    }
+
+    public void setIdPessoa(Long IdPessoa) {
+        this.IdPessoa = IdPessoa;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String Nome) {
+        this.Nome = Nome;
+    }
+
+    public int getCPF() {
+        return CPF;
+    }
+
+    public void setCPF(int CPF) {
+        this.CPF = CPF;
+    }
+
+    public Calendar getDataNasc() {
+        return DataNasc;
+    }
+
+    public void setDataNasc(Calendar DataNasc) {
+        this.DataNasc = DataNasc;
+    }
+
+    public String getNomeMae() {
+        return NomeMae;
+    }
+
+    public void setNomeMae(String NomeMae) {
+        this.NomeMae = NomeMae;
+    }
+
+    public String getCor() {
+        return Cor;
+    }
+
+    public void setCor(String Cor) {
+        this.Cor = Cor;
+    }
+
+    public Candidato getCandidato() {
+        return Candidato;
+    }
+
+    public void setCandidato(Candidato Candidato) {
+        this.Candidato = Candidato;
+    }
+
+    public Endereco getEndereco() {
+        return Endereco;
+    }
+
+    public void setEndereco(Endereco Endereco) {
+        this.Endereco = Endereco;
+    }
 
     
     
