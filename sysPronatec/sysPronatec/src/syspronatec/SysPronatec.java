@@ -5,6 +5,9 @@
  */
 package syspronatec;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
 /**
  *
  * @author David
@@ -15,7 +18,13 @@ public class SysPronatec {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        SessionFactory sf = HibernateUtil.getSessionFactory();
+        Session session = sf.openSession();
+        
+        
+        session.close();
+        
     }
     
 }
