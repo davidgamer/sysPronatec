@@ -45,4 +45,11 @@ public class Pessoa {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdPessoa", nullable = false)
     private Endereco Endereco;
+
+    
+    
+    
+    
+    
+    
 }
