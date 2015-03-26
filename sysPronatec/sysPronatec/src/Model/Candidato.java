@@ -39,9 +39,8 @@ public class Candidato {
     @Column(name = "DispHorario", nullable = false, length = 10)
     private String DispHorario;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdPessoa", nullable = false)
-     @PrimaryKeyJoinColumn
+   @OneToOne(fetch = FetchType.LAZY)
+   @JoinColumn(name = "IdPessoa", nullable = false) 
     private Pessoa Pessoa;
 
     @ManyToOne(fetch = FetchType.LAZY)
