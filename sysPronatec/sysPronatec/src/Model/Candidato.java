@@ -40,7 +40,8 @@ public class Candidato {
     private String DispHorario;
 
    @OneToOne(fetch = FetchType.LAZY)
-   @JoinColumn(name = "IdPessoa", nullable = false) 
+   @JoinColumn(name = "IdPessoa", nullable = false)
+    
     private Pessoa Pessoa;
 
     @ManyToOne(fetch = FetchType.LAZY)
