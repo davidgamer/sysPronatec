@@ -52,6 +52,6 @@ public class Candidato {
 
     @OneToMany(fetch = FetchType.LAZY,
             mappedBy = "Candidato")
-    private List<Atendimento> Atendimentos;
+    private List<Atendimento> Atendimento;
 
 }
