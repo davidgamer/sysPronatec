@@ -40,10 +40,10 @@ public class Pessoa {
     @OneToOne(fetch = FetchType.LAZY,
             mappedBy = "Pessoa",
             cascade = CascadeType.ALL)
-    private Candidato candidato;
+    private Candidato Candidato;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdPessoa", nullable = false)
+    @JoinColumn(name = "IdEndereco", nullable = false)
     private Endereco Endereco;
 
     

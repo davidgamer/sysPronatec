@@ -27,7 +27,7 @@ public class Candidato {
 
     @Id
     @Column(name = "IdPessoaCandidato", nullable = false, updatable = false, insertable = false)
-    private Integer idPessoaCandidato;
+    private Integer IdPessoaCandidato;
 
     @Column(name = "NIS", nullable = false)
     private int NIS;
