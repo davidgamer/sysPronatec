@@ -15,6 +15,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 /**
@@ -40,6 +41,7 @@ public class Candidato {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdPessoa", nullable = false)
+     @PrimaryKeyJoinColumn
     private Pessoa Pessoa;
 
     @ManyToOne(fetch = FetchType.LAZY)
