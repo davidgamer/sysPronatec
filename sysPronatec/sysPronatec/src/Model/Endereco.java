@@ -18,7 +18,7 @@ public class Endereco {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdEndereco")
+    @Column(name = "IdEndereco", nullable = false, updatable = false, insertable = false)
     private Long IdEndereco;
     
     @Column(name = "Rua", nullable = false, length = 30)
@@ -37,7 +37,7 @@ public class Endereco {
     private String Logradouro;
     
     @OneToMany(fetch = FetchType.LAZY,
-            mappedBy = "IdEndereco")
+            mappedBy = "Endereco")
     private List<Pessoa> Pessoa;
 
 }

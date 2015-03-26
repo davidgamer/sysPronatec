@@ -18,7 +18,7 @@ public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdPessoa", nullable = false)
+    @Column(name = "IdPessoa", nullable = false, updatable = false, insertable = false)
     private Long IdPessoa;
 
     @Column(name = "Nome", nullable = false, length = 40)
@@ -43,6 +43,6 @@ public class Pessoa {
     private Candidato candidato;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdPessoaCandidato", nullable = false)
+    @JoinColumn(name = "IdPessoa", nullable = false)
     private Endereco Endereco;
 }

@@ -9,11 +9,11 @@
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.connection.password">root</property>
     <mapping class="Model.Atendimento"/>
-    <mapping class="Model.Candidato.java" file="" jar="" package="" resource=""/>
     <mapping class="Model.Curso"/>
     <mapping class="Model.Endereco"/>
-    <mapping class="Model.Pessoa"/>
     <mapping class="Model.Telefone"/>
     <mapping class="Model.Escolaridade"/>
+    <mapping class="Model.Candidato"/>
+    <mapping class="Model.Pessoa"/>
   </session-factory>
 </hibernate-configuration>

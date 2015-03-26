@@ -17,7 +17,7 @@ public class Telefone {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdTelefone", nullable = false)
+    @Column(name = "IdTelefone", nullable = false, updatable = false, insertable = false)
     private int IdTelefone;
 
     @Column(name = "TelefoneCelular", nullable = false)

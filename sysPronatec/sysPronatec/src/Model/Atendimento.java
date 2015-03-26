@@ -19,7 +19,7 @@ public class Atendimento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdAtendimento", nullable = false)
+    @Column(name = "IdAtendimento", nullable = false, updatable = false, insertable = false)
     private long IdAtendimento;
 
     @Column(name = "Cadastrador", nullable = false, length = 20)

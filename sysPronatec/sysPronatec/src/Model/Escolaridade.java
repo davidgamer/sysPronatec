@@ -25,6 +25,6 @@ public class Escolaridade {
     private String GrauEscolaridade;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "Escolaridade")
-    private List<Candidato> candidatos;
+    private List<Candidato> Candidato;
 
 }

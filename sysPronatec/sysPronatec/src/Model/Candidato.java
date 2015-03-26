@@ -44,14 +44,14 @@ public class Candidato {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "IdEscolaridade", nullable = false)
-    private Escolaridade escolaridade;
+    private Escolaridade Escolaridade;
 
     @OneToMany(fetch = FetchType.LAZY,
             mappedBy = "Candidato")
     private List<Telefone> telefones;
 
     @OneToMany(fetch = FetchType.LAZY,
-            mappedBy = "Candidato")
+            mappedBy = "IdAtendimento")
     private List<Atendimento> Atendimento;
 
 }
