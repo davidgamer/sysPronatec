@@ -27,4 +27,28 @@ public class Escolaridade {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "Escolaridade")
     private List<Candidato> Candidato;
 
+    public Long getIdEscolaridade() {
+        return IdEscolaridade;
+    }
+
+    public void setIdEscolaridade(Long IdEscolaridade) {
+        this.IdEscolaridade = IdEscolaridade;
+    }
+
+    public String getGrauEscolaridade() {
+        return GrauEscolaridade;
+    }
+
+    public void setGrauEscolaridade(String GrauEscolaridade) {
+        this.GrauEscolaridade = GrauEscolaridade;
+    }
+
+    public List<Candidato> getCandidato() {
+        return Candidato;
+    }
+
+    public void setCandidato(List<Candidato> Candidato) {
+        this.Candidato = Candidato;
+    }
+
 }
