@@ -38,11 +38,11 @@ public class SysPronatec {
         
         
         
-        Escolaridade escolaridade = new Escolaridade();
+     
         
         
         
-        escolaridade.setGrauEscolaridade("EMC");
+       
         
         
      
@@ -52,7 +52,7 @@ public class SysPronatec {
 
             tx = session.beginTransaction();
 
-            session.persist(escolaridade);
+        //    session.persist();
             //session.persist(Ed);
 
             tx.commit();
