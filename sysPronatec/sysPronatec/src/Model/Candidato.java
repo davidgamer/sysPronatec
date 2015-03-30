@@ -59,4 +59,69 @@ public class Candidato  {
             mappedBy = "IdAtendimento")
     private List<Atendimento> Atendimento;
 
+    public Integer getIdPessoaCandidato() {
+        return IdPessoaCandidato;
+    }
+
+    public void setIdPessoaCandidato(Integer IdPessoaCandidato) {
+        this.IdPessoaCandidato = IdPessoaCandidato;
+    }
+
+    public int getNIS() {
+        return NIS;
+    }
+
+    public void setNIS(int NIS) {
+        this.NIS = NIS;
+    }
+
+    public String getProfissao() {
+        return Profissao;
+    }
+
+    public void setProfissao(String Profissao) {
+        this.Profissao = Profissao;
+    }
+
+    public String getDispHorario() {
+        return DispHorario;
+    }
+
+    public void setDispHorario(String DispHorario) {
+        this.DispHorario = DispHorario;
+    }
+
+    public Pessoa getPessoa() {
+        return Pessoa;
+    }
+
+    public void setPessoa(Pessoa Pessoa) {
+        this.Pessoa = Pessoa;
+    }
+
+    public Escolaridade getEscolaridade() {
+        return Escolaridade;
+    }
+
+    public void setEscolaridade(Escolaridade Escolaridade) {
+        this.Escolaridade = Escolaridade;
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(List<Telefone> telefones) {
+        this.telefones = telefones;
+    }
+
+    public List<Atendimento> getAtendimento() {
+        return Atendimento;
+    }
+
+    public void setAtendimento(List<Atendimento> Atendimento) {
+        this.Atendimento = Atendimento;
+    }
+    
+
 }
