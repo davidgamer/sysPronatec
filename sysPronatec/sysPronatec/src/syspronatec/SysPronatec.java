@@ -9,6 +9,7 @@ import Model.Curso;
 import Model.Endereco;
 import Model.Escolaridade;
 import Model.Pessoa;
+
 import Visao.Main;
 import java.util.Calendar;
 import java.util.List;
@@ -31,10 +32,10 @@ public class SysPronatec {
         
         Main m = new Main();
         m.setVisible(true);
+       
         
         
-        
-        
+      /*  
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.openSession();
           Transaction tx = null;
@@ -86,5 +87,6 @@ public class SysPronatec {
         session.close();
         
     }
-    
+   */ 
+}
 }
