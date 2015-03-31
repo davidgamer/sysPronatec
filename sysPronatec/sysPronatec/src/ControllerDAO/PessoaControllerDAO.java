@@ -30,7 +30,7 @@ public class PessoaControllerDAO implements PessoaDAO{
      }
 
     @Override
-    public Pessoa Buscar(Pessoa pessoa) {
+    public Pessoa buscar(Pessoa pessoa) {
         return null;
       }
 

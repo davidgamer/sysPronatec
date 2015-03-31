@@ -5,17 +5,15 @@
  */
 package InterfaceDAO;
 
-import Model.Pessoa;
+import Model.Endereco;
 
 /**
  *
  * @author David
  */
-public interface PessoaDAO {
-    
-    public Pessoa salvar(Pessoa pessoa);
-    public Pessoa remover(Pessoa pessoa);
-    public Pessoa editar(Pessoa pessoa);
-    public Pessoa buscar(Pessoa pessoa);
-    
+public interface EnderecoDAO {
+    public Endereco salvar(Endereco endereco);
+    public Endereco remover(Endereco endereco);
+    public Endereco editar(Endereco endereco);
+    public Endereco buscar(Endereco endereco);
 }
