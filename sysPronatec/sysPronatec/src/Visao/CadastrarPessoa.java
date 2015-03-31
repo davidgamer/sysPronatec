@@ -60,6 +60,8 @@ public class CadastrarPessoa extends javax.swing.JPanel {
         jComboBox1.setBackground(new java.awt.Color(66, 133, 140));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Branco", "Negra", "Parda" }));
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Branco", "Negra", "Parda" }));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
