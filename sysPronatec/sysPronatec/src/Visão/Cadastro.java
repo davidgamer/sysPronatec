@@ -37,7 +37,7 @@ public class Cadastro extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        CPF = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox();
 
         setResizable(false);
@@ -61,8 +61,8 @@ public class Cadastro extends javax.swing.JFrame {
         jTextField1.setDisabledTextColor(new java.awt.Color(204, 0, 51));
         jTextField1.setDoubleBuffered(true);
 
-        jTextField3.setDragEnabled(true);
-        jTextField3.setOpaque(true);
+        CPF.setDragEnabled(true);
+        CPF.setOpaque(true);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Branco", "Pardo", "Negro" }));
 
@@ -81,7 +81,7 @@ public class Cadastro extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jTextField3)
+                                .addComponent(CPF)
                                 .addContainerGap())))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
@@ -113,7 +113,7 @@ public class Cadastro extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(jLabel3))
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -182,6 +182,7 @@ public class Cadastro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField CPF;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox jComboBox1;
@@ -192,6 +193,5 @@ public class Cadastro extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
