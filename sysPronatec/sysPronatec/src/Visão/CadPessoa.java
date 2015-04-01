@@ -6,6 +6,7 @@
 package Visão;
 
 import com.sun.awt.AWTUtilities;
+import java.awt.Color;
 
 /**
  *
@@ -170,6 +171,7 @@ public class CadPessoa extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new CadPessoa().setVisible(true);
+               
             }
         });
     }

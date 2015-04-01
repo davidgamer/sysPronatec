@@ -6,6 +6,7 @@
 package Visão;
 
 import com.sun.awt.AWTUtilities;
+import javafx.scene.paint.Color;
 
 
 
@@ -95,6 +96,7 @@ public class Menu extends javax.swing.JFrame {
         test = new CadPessoa();
        
         test.setVisible(true);
+        
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
