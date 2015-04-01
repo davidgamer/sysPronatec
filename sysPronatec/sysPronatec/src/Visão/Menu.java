@@ -5,6 +5,8 @@
  */
 package Visão;
 
+import static java.awt.Component.CENTER_ALIGNMENT;
+
 
 
 
@@ -18,15 +20,15 @@ public class Menu extends javax.swing.JFrame {
     /**
      * Creates new form Menu
      */
-    
+   
     
     public Menu() {
         initComponents();
- 
+      
    
     }
 
-    CadPessoa test = new CadPessoa();
+    Cadastro test = new Cadastro();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -42,6 +44,7 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SysPronatec");
         setResizable(false);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Visao/Backgrond/image.png"))); // NOI18N
@@ -89,7 +92,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1MouseClicked
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        test = new CadPessoa();
+        test = new Cadastro();
        
         test.setVisible(true);
         
@@ -126,6 +129,7 @@ public class Menu extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Menu().setVisible(true);
+                
             }
         });
     }
