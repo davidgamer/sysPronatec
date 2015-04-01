@@ -9,6 +9,7 @@ import Model.Curso;
 import Model.Endereco;
 import Model.Escolaridade;
 import Model.Pessoa;
+import Visão.Menu;
 
 
 import java.util.Calendar;
@@ -29,7 +30,8 @@ public class SysPronatec {
     public static void main(String[] args) {
         
         
- 
+ Menu m = new Menu();
+ m.setVisible(true);
        
         
         
