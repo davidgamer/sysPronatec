@@ -5,6 +5,10 @@
  */
 package Visão;
 
+import com.sun.awt.AWTUtilities;
+
+
+
 /**
  *
  * @author David
@@ -18,9 +22,11 @@ public class Menu extends javax.swing.JFrame {
     
     public Menu() {
         initComponents();
+ 
+   
     }
 
-    testeMenu test = new testeMenu();
+    CadPessoa test = new CadPessoa();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -86,7 +92,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1MouseClicked
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        test = new testeMenu();
+        test = new CadPessoa();
        
         test.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
