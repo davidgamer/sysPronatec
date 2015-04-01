@@ -237,6 +237,7 @@ public class Cadastro extends javax.swing.JFrame {
         end = new Endereco();
        
         end.setVisible(true);
+         this.setVisible(false);
     }//GEN-LAST:event_jButton2MouseClicked
 
     
