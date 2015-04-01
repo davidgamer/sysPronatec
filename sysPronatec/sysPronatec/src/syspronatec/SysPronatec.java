@@ -10,7 +10,7 @@ import Model.Endereco;
 import Model.Escolaridade;
 import Model.Pessoa;
 
-import Visao.Main;
+
 import java.util.Calendar;
 import java.util.List;
 import org.hibernate.Session;
@@ -29,9 +29,7 @@ public class SysPronatec {
     public static void main(String[] args) {
         
         
-        
-        Main m = new Main();
-        m.setVisible(true);
+ 
        
         
         
