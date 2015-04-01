@@ -58,6 +58,11 @@ public class Main extends javax.swing.JFrame {
                 jMenu2MouseClicked(evt);
             }
         });
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Visao/Backgrond/check13.png"))); // NOI18N
         jMenuItem1.setText("Novo");
@@ -109,6 +114,11 @@ public class Main extends javax.swing.JFrame {
     private void jMenuItem1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1MouseEntered
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+         CadPessoa cad = new CadPessoa();
+        cad.setVisible(true);
+    }//GEN-LAST:event_jMenu2ActionPerformed
 
     /**
      * @param args the command line arguments
